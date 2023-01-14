@@ -34,5 +34,6 @@ public class Q4_lab2 {
         System.out.println(sum);
 
 
+
     }
 }
