@@ -13,7 +13,6 @@ public class Q6_lab3 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your unit consumed ");
         int unit = sc.nextInt();
-        double a, b, c, d;
         if (unit <= 50) {
             System.out.println("Your bill amount " + unit * 3);
         } else if (unit > 50 && unit <= 200) {
