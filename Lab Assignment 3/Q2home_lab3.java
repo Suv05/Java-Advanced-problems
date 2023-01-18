@@ -15,8 +15,8 @@ public class Q2home_lab3 {
         System.out.println("Enter the number of days elapsed since today: ");
         int day2 = sc.nextInt();
         switch (day) {
-            case 1:
-                System.out.println(" Today is Monday");
+            case 1 -> System.out.println(" Today is Monday");
+            case 2 -> System.out.println(" Today is sunday");
         }
     }
 }

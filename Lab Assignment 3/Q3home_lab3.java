@@ -19,10 +19,6 @@ public class Q3home_lab3 {
             case 11 -> System.out.println("It is November");
             case 12-> System.out.println("It is December");
 
-
-
         }
-
-
     }
 }
