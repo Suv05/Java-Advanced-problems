@@ -15,37 +15,37 @@ public class Q3_lab4 {
         System.out.print("Enter a number N: ");
         int n = sc.nextInt();
         int sum = 0;
-
 //        Random rand = new Random();
 //        int num = rand.nextInt();
-
-        int reparandum;
+        int ran;
         int count = 0;
         do {
-            reparandum = (int) (Math.random() * n);
-            System.out.println(reparandum);
-            sum = sum + reparandum;
+            ran = (int) (1+(Math.random() * n));
+            System.out.println(ran);
+            sum = (int) (sum + ran);
             count++;
 
         } while (count < n);
-        int avg_sum = (int) (sum / n);
+        int avg_sum =  (sum / n);
         System.out.println("here is avg " + avg_sum);
 
 
-        //BY😻ChatGpt....🌙💞
-        //Scanner sc = new Scanner(System.in);
-        //        System.out.print("Enter a number N: ");
-        //        int n = sc.nextInt();
-        //        int sum = 0;
-//                int count = 0;
-//                do {
-//                    int randomNum = (int) (Math.random() * n );
-//                    System.out.println(randomNum);
-//                    sum += randomNum;
-//                    count++;
-//                } while (count < n);
-//                double average = (double) sum / n;
-//                System.out.println("Average: " + average);
+        /*
+        BY😻ChatGpt....🌙💞
+        Scanner sc = new Scanner(System.in);
+                System.out.print("Enter a number N: ");
+                int n = sc.nextInt();
+                int sum = 0;
+                        int count = 0;
+                        do {
+                            int randomNum = (int) (Math.random() * n );
+                            System.out.println(randomNum);
+                            sum += randomNum;
+                            count++;
+                        } while (count < n);
+                        double average = (double) sum / n;
+                        System.out.println("Average: " + average);
+        */
     }
 }
 
