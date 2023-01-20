@@ -1,3 +1,4 @@
+import java.util.*;
 public class Q6_lab4 {
     public static void main(String[] args) {
 //Write a java program to enter two numbers through the keyboard. Write a program to find the
@@ -7,5 +8,10 @@ public class Q6_lab4 {
 //Enter the base: 5
 //Enter the power: 4
 //5 to the power 4 is: 625
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the base: ");
+        int b = sc.nextInt();
+        System.out.println("Enter the power: ");
+        int p = sc.nextInt();
     }
 }
