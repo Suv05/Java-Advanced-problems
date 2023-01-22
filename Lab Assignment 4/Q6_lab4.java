@@ -13,5 +13,16 @@ public class Q6_lab4 {
         int b = sc.nextInt();
         System.out.println("Enter the power: ");
         int p = sc.nextInt();
-    }
-}
+//        int i = 0;
+//        while (i < p) {
+//            i++;
+//            b=b*b;
+//            System.out.println("TO THE POWER "+ b);
+//        }
+                int result = 1;
+                for (int i = 0; i < p; i++) {
+                    result *= b;
+                }
+                System.out.println(b + " raised to the power of " +p + " is " + result);
+            }
+        }
