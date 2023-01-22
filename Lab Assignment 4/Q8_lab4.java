@@ -6,6 +6,7 @@ public class Q8_lab4 {
         //should display "Too high, try again." If the user's guess is lower than the random number, the
         //program should display "Too low, try again." The program should use a loop that repeats until
         //the user correctly guesses the random number and display good guess.
+
         // Sample run:
         //Computer guess: 7
         //User guess: 5
@@ -16,8 +17,17 @@ public class Q8_lab4 {
         //Computer guess: 5
         //User guess: 5
         //Good guess
+        Random rand = new Random();
+        int comp= rand.nextInt(1,10);
+        System.out.println("Computer guess : " + comp);
         Scanner sc = new Scanner(System.in);
-        System.out.println("hello");
+        System.out.println("User guess ");
+        int user = sc.nextInt();
+
+        for (int i = 0; i < comp;i++ ) {
+            System.out.println("Your guess is high");
+        }
+
 
     }
 }
