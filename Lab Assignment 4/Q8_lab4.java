@@ -17,7 +17,7 @@ public class Q8_lab4 {
         //User guess: 5
         //Good guess
         Scanner sc = new Scanner(System.in);
-        System.out.println("");
+        System.out.println("hello");
 
     }
 }
