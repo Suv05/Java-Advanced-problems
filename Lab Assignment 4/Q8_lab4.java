@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Q8_lab4 {
     public static void main(String[] args) {
         //Q-Write a program that generates a random integer number between 1 and 10 and asks the user to
@@ -17,15 +18,22 @@ public class Q8_lab4 {
         //Computer guess: 5
         //User guess: 5
         //Good guess
-        Random rand = new Random();
-        int comp= rand.nextInt(1,10);
-        System.out.println("Computer guess : " + comp);
         Scanner sc = new Scanner(System.in);
-        System.out.println("User guess ");
+        System.out.println("User guess a number between 1 to 10 :");
         int user = sc.nextInt();
+        Random rand = new Random();
+        int comp = rand.nextInt(1, 10);
+        System.out.println("Computer guess : " + comp);
+        while (user != comp) {
+            if (user > comp) {
+                System.out.println("Your guess is too high");
+            } else if (user < comp) {
+                System.out.println("Your guess is too low");
+            } else {
+                System.out.println("Your guess is right");
+            }
+            user++;
 
-        for (int i = 0; i < comp;i++ ) {
-            System.out.println("Your guess is high");
         }
 
 
