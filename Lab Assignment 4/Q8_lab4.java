@@ -27,10 +27,8 @@ public class Q8_lab4 {
         while (user != comp) {
             if (user > comp) {
                 System.out.println("Your guess is too high");
-            } else if (user < comp) {
-                System.out.println("Your guess is too low");
             } else {
-                System.out.println("Your guess is right");
+                System.out.println("Your guess is too low");
             }
             user++;
 
