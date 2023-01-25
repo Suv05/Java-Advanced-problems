@@ -25,12 +25,13 @@ public class Q8_lab4 {
         int comp = rand.nextInt(1, 10);
         System.out.println("Computer guess : " + comp);
         while (user != comp) {
-            if (user > comp) {
-                System.out.println("Your guess is too high");
-            } else {
-                System.out.println("Your guess is too low");
+            if (comp <= user) {
+                System.out.println("You guess too low");
+            } else if (comp >= user) {
+                System.out.println("You guess too high");
+            }else {
+                System.out.println("You guess right");
             }
-            user++;
 
         }
 
