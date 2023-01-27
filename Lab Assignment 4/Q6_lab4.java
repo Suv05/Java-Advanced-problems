@@ -22,6 +22,9 @@ public class Q6_lab4 {
                 int result = 1;
                 for (int i = 0; i < p; i++) {
                     result *= b;
+                    System.out.println("This is b "+b);
+                    System.out.println(result);
+
                 }
                 System.out.println(b + " raised to the power of " +p + " is " + result);
             }
