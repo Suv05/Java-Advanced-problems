@@ -22,9 +22,9 @@ public class Q9_lab4 {
         String output = "";
 
         for (int i = 0; i < input.length(); i++) {
-            char currentchar = input.charAt(i);
-            if (currentchar != '0') {
-                output += currentchar;
+            char CurrentChar = input.charAt(i);
+            if (CurrentChar != '0') {
+                output += CurrentChar;
 
             }
         }
