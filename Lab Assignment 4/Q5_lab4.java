@@ -15,7 +15,7 @@ public class Q5_lab4 {
 
         //Sample run2:
         //Enter a number: 490
-        //490 is not a perfect number.
+        //490 is not a perfect number. I did it🫰❤️‍🔥❤️🤯
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your number: ");
