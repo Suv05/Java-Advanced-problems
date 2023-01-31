@@ -27,7 +27,8 @@ public class Part1 {
         System.out.println(a+" "+b+" "+c);
         System.out.println(4%5);
         System.out.println(5%4);
-
+        System.out.println((int)5.0/9.0);
+        System.out.println(9/5);
 
 
 
