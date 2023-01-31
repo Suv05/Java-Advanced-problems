@@ -25,6 +25,7 @@ public class Part1 {
         b=a*8+4%5-6;
         c=a+b*3-2%5-4;
         System.out.println(a+" "+b+" "+c);
+        System.out.println(a);
 
 
 
