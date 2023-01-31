@@ -21,7 +21,7 @@ public class Part1 {
 
         //Q2-
         int a, b, c;
-        a=-3+2*7-4;
+        a=-3+2*7-4; //2*7=14,14-3=11,11-4=7....left to right highest precedence *
         b=a*8+4%5-6;
         c=a+b*3-2%5-4;
         System.out.println(a+" "+b+" "+c);
