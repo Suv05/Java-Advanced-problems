@@ -12,7 +12,7 @@ public class Part5_9 {
             int x = - 5;
             System.out.println(x>>2);
             int y = 4;                //It always sifts the digit that much but not 0
-            System.out.println(y>>1);//but +ve can sift till 0
+            System.out.println(y>>1);//but +ve can sift till
 
          //Q-7
         System.out.println(10 + 15 + "Hello");
