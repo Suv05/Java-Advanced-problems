@@ -20,7 +20,7 @@ public class Part5_9 {
 
         //Q-8
 //        byte b = 10;
-//        b = b + 10;
+//        b =  b + 10;   //Here it shows error bcz it has to convert in byte type...
 //        System.out.println(b);
 
         //Q-9
