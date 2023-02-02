@@ -10,7 +10,7 @@ public class Part10_15 {
 
         //Q11-
         int x=5;
-        System.out.println(~x); //Eithi 5 hele output -6 and -5 hele +4 heba...😎😎
+        System.out.println(~x); //Eithi 5 hele output -6 and -5 hele +4 heba...😎
 
     }
 }
