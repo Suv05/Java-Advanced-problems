@@ -9,8 +9,8 @@ public class Part5_9 {
 //        System.out.println("bc"+('c'+'a')+(2)+3); //bc19623...char within ()..
 
         //Q-6
-        int x = -5;
-        System.out.println(x >> 1);
+        int x = 7;
+        System.out.println(x >> 2);
         int y = 120;
         System.out.println(y >> 1);//but +ve can sift till 0
 

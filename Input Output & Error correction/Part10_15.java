@@ -10,9 +10,11 @@ public class Part10_15 {
 
         //Q11-
         int x=5;
-        System.out.println(~x); //Eithi 5 hele output -6 and -5 hele +4 hebe...😎💞
+        System.out.println(~x); //Eithi add -1 in binary of 5...😎💞
 
         //Q-12
+        int y=Integer.MAX_VALUE;
+        System.out.println(y>>28);
         //Q-14
         //Q-13
         //Q-15
