@@ -9,15 +9,31 @@ public class Part10_15 {
 
 
         //Q11-
-        int x=5;
-        System.out.println(~x); //Eithi add -1 in binary of 5...😎💞 so that it would be -ve
+//        int x=5;
+//        System.out.println(~x); //Eithi add -1 in binary of 5...😎💞 so that it would be -ve
+
 
         //Q-12
-        int y=Integer.MAX_VALUE;//It generates the last value of integer range
-        System.out.println(y>>2);
-        //Q-14
+//        int y=Integer.MAX_VALUE;//It generates the last value of integer range
+//        System.out.println(y>>2);
+
+
         //Q-13
+        int x=10,y=5;
+        System.out.println(x++^++y|(x=y)&101);
+
+
+        //Q-14
+        int x=-4,y=4;
+        System.out.println((x>>>30)+" "+(x>>30)+" "+(y>>1));
+
+
         //Q-15
+        int x=5;
+        int y=x++ + ++x + ++x;
+        int z=--y + x++ + y++;
+        int p=z++ - (z%10) + (p=z);
+        System.out.println(x+" "+y+" "+z+" "+p);
 
     }
 }
