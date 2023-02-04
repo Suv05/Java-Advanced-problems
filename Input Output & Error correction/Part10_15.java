@@ -10,11 +10,11 @@ public class Part10_15 {
 
         //Q11-
         int x=5;
-        System.out.println(~x); //Eithi add -1 in binary of 5...😎💞
+        System.out.println(~x); //Eithi add -1 in binary of 5...😎💞 so that it would be -ve
 
         //Q-12
-        int y=Integer.MAX_VALUE;
-        System.out.println(y>>28);
+        int y=Integer.MAX_VALUE;//It generates the last value of integer range
+        System.out.println(y>>2);
         //Q-14
         //Q-13
         //Q-15
