@@ -24,16 +24,16 @@ public class Part10_15 {
 
 
         //Q-14
-        int x=-4,y=4;
-        System.out.println((x>>>30)+" "+(x>>30)+" "+(y>>1));
+//        int x=-4,y=4;
+//        System.out.println((x>>>30)+" "+(x>>30)+" "+(y>>1));
 
 
         //Q-15
-        int x=5;
-        int y=x++ + ++x + ++x;
-        int z=--y + x++ + y++;
-        int p=z++ - (z%10) + (p=z);
-        System.out.println(x+" "+y+" "+z+" "+p);
+//        int x=5;
+//        int y=x++ + ++x + ++x;
+//        int z=--y + x++ + y++;
+//        int p=z++ - (z%10) + (p=z);
+//        System.out.println(x+" "+y+" "+z+" "+p);
 
     }
 }
