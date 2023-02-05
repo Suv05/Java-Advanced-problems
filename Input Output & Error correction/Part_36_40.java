@@ -17,8 +17,12 @@ public class Part_36_40 {
 //        boolean p1=(b-- == -99 || a-- > 100);
 //        System.out.println(p1);
         //Q-39
-
-        //Q-36
+//        char a = 'A';
+//        System.out.println(++a +" "+ (int)a++);
+        //Q-40
+//        float x=5.3f;
+//        boolean p=(x==5.3);
+//        System.out.println(p);
 
     }
 }
