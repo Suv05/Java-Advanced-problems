@@ -9,10 +9,10 @@ public class Part10_15 {
 
 
         //Q11-
-        int x=8;
-        System.out.println(~x); //Eithi add -1 in binary of digit...
-        //Like 5 ra xor heuchi -6...
-        //Like -5 ra xor heichi 4...
+        //Like 5 ra compliment heuchi -6...
+        //Like -5 ra compliment heichi 4...
+//        int x=8;
+//        System.out.println(~x); //Eithi add -1 in binary of digit...
 
 
         //Q-12
@@ -22,7 +22,8 @@ public class Part10_15 {
 
         //Q-13
 //        int x=10,y=5;
-//        System.out.println(x++^++y|(x=y)&101);
+//        System.out.println(x++^++y| (x=y) &101);  //Doubt❌❓⚠️
+
 
 
         //Q-14
