@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Q1_lab5 {
     public static void main(String[] args) {
 //Question-1:
@@ -12,5 +14,29 @@ public class Q1_lab5 {
 //Enter first number: 220
 //Enter second number: 230
 //220 and 230 are not amicable numbers
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter first number: ");
+        int x = sc.nextInt();
+        System.out.println("Enter second number: ");
+        int y = sc.nextInt();
+        int sum1 = 0;
+        int sum2 = 0;
+        for (int i = 1; i < x; i++) {
+            if (x % i == 0) {
+                sum1 = sum1 + i;
+            }
+        }
+        for (int j = 1; j < y; j++) {
+            if (y % j == 0) {
+                sum2 = sum2 + j;
+            }
+        }
+        if (sum1 == y && sum2 == x) {
+            System.out.println(x + " and " + y + " are amicable numbers.");
+        } else {
+            System.out.println(x + " and " + y + " are not amicable numbers.");
+        }
+
     }
 }
