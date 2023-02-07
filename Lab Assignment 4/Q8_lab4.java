@@ -19,22 +19,21 @@ public class Q8_lab4 {
         //User guess: 5
         //Good guess
         Scanner sc = new Scanner(System.in);
-        System.out.println("User guess a number between 1 to 10 :");
-        int user = sc.nextInt();
+        int user = 0;
         Random rand = new Random();
         int comp = rand.nextInt(1, 10);
-        System.out.println("Computer guess : " + comp);
+//        System.out.println("Computer guess : " + comp);
         while (user != comp) {
-            if (comp <= user) {
+            System.out.println("User guess a number between 1 to 10 :");
+            user = sc.nextInt();
+            if (comp > user) {
                 System.out.println("You guess too low");
-            } else if (comp >= user) {
+            } else if (comp < user) {
                 System.out.println("You guess too high");
-            }else {
+            } else {
                 System.out.println("You guess right");
             }
 
         }
-
-
     }
 }
