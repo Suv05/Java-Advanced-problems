@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Q3_lab5 {
     public static void main(String[] args) {
         //Question-3:
@@ -12,18 +13,25 @@ public class Q3_lab5 {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the first number: ");
-        int x=sc.nextInt();
+        int x = sc.nextInt();
         System.out.println("Enter the second number: ");
-        int y=sc.nextInt();
+        int y = sc.nextInt();
+        System.out.println("Prime numbers between " + x + " and " + y + " are: ");
         for (int i = x; i <= y; i++) {
-            for (int j = 2; j <= y / 2; j++) {
-                if (i % j != 0) {
-                    System.out.println(i);
+            boolean isPrime = true;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    isPrime = false;
                     break;
                 }
             }
+            if (isPrime) {
+                System.out.println(i);
+            }
         }
-
-
     }
 }
+
+
+
+
