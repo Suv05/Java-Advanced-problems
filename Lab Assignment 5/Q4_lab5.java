@@ -8,7 +8,7 @@ public class Q4_lab5 {
 //Sample run:
 //Enter the value of m: 2
 //Enter the value of n: 5
-//Factorial of 2 is: 2
+//Factorial of 2 is:
 //Factorial of 3 is: 6
 //Factorial of 4 is: 24
 //Factorial of 5 is: 120
@@ -17,5 +17,6 @@ public class Q4_lab5 {
         int m= sc.nextInt();
         System.out.println("Enter the value of n: ");
         int n= sc.nextInt();
+
     }
 }
