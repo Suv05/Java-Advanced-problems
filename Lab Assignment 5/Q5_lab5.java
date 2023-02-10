@@ -24,6 +24,18 @@ public class Q5_lab5 {
 //:
 //:
 //15 × 10 = 150
+        //Normal table format...
+//        int n=2;
+//        for (int i = 1; i <= 10; i++) {
+//            System.out.printf("%d X %d=%d\n" ,n, i, n*i);
+//        }
+        for (int i = 2; i < 16; i++) {
+            System.out.println("Multiplication table of "+i);
+            for (int x = 1; x < 11; x++) {
+                System.out.printf("%d X %d = %d\n",i,x,i*x);
+
+            }
+        }
 
     }
 }
