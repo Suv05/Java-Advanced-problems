@@ -24,6 +24,7 @@ public class Part_21_25 {
 //        int a=4;
 //        int b=5;
 //        int x=(a++ < b)?a:b;//5 : 5
+//        System.out.println(x);
 //        int y=a+b-x;
 //        System.out.println("x="+x);
 //        System.out.println("y="+y);
