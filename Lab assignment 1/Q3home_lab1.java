@@ -6,6 +6,9 @@ public class Q3home_lab1 {
         System.out.println(2 - a);
         System.out.println(-2 - a);
         System.out.println(2 * a);
+        System.out.println(3 * a);
         System.out.println(4 * a);
+        System.out.println(5 * a);
+        System.out.println(6 * a);
     }
 }
