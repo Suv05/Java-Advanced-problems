@@ -21,7 +21,7 @@ public class Q5_lab2 {
         float r= sc.nextFloat();
         float vl = (float) ((2.0/3.0)*Math.PI*Math.pow(r,3));
         System.out.println(vl);
-        Float sr = (float) (3.0 * Math.PI * Math.pow(r, 2));
+        float sr = (float) (3.0 * Math.PI * Math.pow(r, 2));
         System.out.println(sr);
     }
 }
