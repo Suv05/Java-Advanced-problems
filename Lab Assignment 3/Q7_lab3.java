@@ -12,7 +12,6 @@ public class Q7_lab3 {
         //Total amount: 4925.4
         //Discount: 147.762
         //Amount payable: 4777.638
-        double pay1,pay2,pay3,pay4;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your unit consumed ");
         int unit = sc.nextInt();
@@ -20,35 +19,38 @@ public class Q7_lab3 {
         char choice = sc.next().charAt(0);
         if (choice == 'Y' || choice == 'y') {
             System.out.println("Here is your bill");
-        }else {
+        } else {
             System.out.println("Pay bill in offline then");
         }
-        if (unit <= 50) {
-            System.out.println("Your bill amount " + unit * 3);
-            pay1=unit * 3;
-            double discount1 = (unit * 3)*3/100;
-            System.out.println("Your discount " + discount1);
-            System.out.println("Your amount payable " + (double) (pay1 - discount1));
-        } else if (unit > 50 && unit <= 200) {
-            System.out.println("Your bill amount " + (50 * 3 + (unit - 50) * 4.80));
-            pay2 = (50 * 3 + (unit - 50) * 4.80);
-            double discount2 = (50 * 3 + (unit - 50) * 4.80) * 3 / 100;
-            System.out.println("Your discount " + discount2);
-            System.out.println("Your amount payable " + (double) (pay2 - discount2));
-        } else if (unit > 200 && unit <= 400) {
-            System.out.println("Your bill amount " + (200 * 4.80) + (unit - 200) * 5.80);
-        pay3=(200 * 4.80) + (unit - 200) * 5.80;
-        double discount3 = ((200 * 4.80) + (unit - 200) * 5.80) * 3 / 100;
-        System.out.println("Your discount " + discount3);
-        System.out.println("Your amount payable " + (double) (pay3 - discount3));
+            double t1, t2, t3, t4;
+            t1 = unit * 3;
+            t2 = 50 * 3 + (unit - 50) * 4.80;
+            t3 = (200 * 4.80) + (unit - 200) * 5.80;
+            t4 = (400 * 5.80) + (unit - 400) * 6.20;
 
-        } else {
-            System.out.println("Your bill amount "+ (400*5.80)+ (unit-400)*6.20);
-        pay4= ((400*5.80)+ (unit-400)*6.20);
-        double discount4 = ((400*5.80)+ (unit-400)*6.20)*3/100;
-        System.out.println("Your discount " + discount4);
-        System.out.println("Your amount payable " + (double) (pay4 - discount4));
+            double pay1, pay2, pay3, pay4;
+            pay1 = t1-(t1 * 3) / 100;
+            pay2 = t2 - (t2 * 3) / 100;
+            pay3 = t3 - (t3 * 3) / 100;
+            pay4 = t4 - (t4 * 3) / 100;
+            if (unit < 50) {
+                System.out.println("Your bill amount " + t1);
+                System.out.println("Your discount is " + (t1 * 3) / 100);
+                System.out.println("Amount payable is: "+ pay1);
+            } else if (unit > 50 && unit <= 200) {
+                System.out.println("Your bill amount " + t2);
+                System.out.println("Your discount is " + (t2 * 3) / 100);
+                System.out.println("Amount payable is: "+ pay2);
+            } else if (unit > 200 && unit <= 400) {
+                System.out.println("Your bill amount " + t3);
+                System.out.println("Your discount is " + (t3 * 3) / 100);
+                System.out.println("Amount payable is: "+ pay3);
+            } else {
+                System.out.println("Your bill amount " + t4);
+                System.out.println("Your discount is " + (t4 * 3) / 100);
+                System.out.println("Amount payable is: "+ pay4);
+            }
+
         }
-
     }
-}
+
