@@ -7,8 +7,7 @@ public class Q3home_lab2 {
         //s = (side1 + side2 + side3)/2;
         //area=√𝑠 ∗ (𝑠 − 𝑎) ∗ (𝑠 − 𝑏) ∗ (𝑠 − 𝑐)
         //Here is a sample run:
-        //Enter three points for a triangle: 1.5 -3.4 4.6 5 9.5
-        //-3.4
+        //Enter three points for a triangle: 1.5 -3.4 4.6 5 9.5 -3.4
         //The area of the triangle is 33.6
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter 3 points for calculating area if triangle");

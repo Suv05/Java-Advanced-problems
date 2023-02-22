@@ -16,7 +16,7 @@ public class Q4_lab3 {
         int u = sc.nextInt();
         Random rand = new Random();
         int x = rand.nextInt(1, 9);
-        System.out.println("Print computers guess :" + x);
+        System.out.println("Print computers guess : " + x);
 
         if (u == x) {
             System.out.println("You got it right");
