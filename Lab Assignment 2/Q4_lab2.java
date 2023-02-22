@@ -26,13 +26,20 @@ public class Q4_lab2 {
         System.out.println(sum);*/
 
         //Method-2
-        int sum = 0;
+        /*int sum = 0;
         while (num!=0){
             sum= sum+num%10;
             num=num/10;
         }
-        System.out.println(sum);
+        System.out.println(sum);*/
 
+        //Method-3
+        int sum;
+        for (sum=0;num!=0;num=num/10){
+
+            sum = sum+num%10;
+        }
+        System.out.println(sum);
 
 
     }
