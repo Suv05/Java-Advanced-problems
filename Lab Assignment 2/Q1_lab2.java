@@ -14,8 +14,8 @@ public class Q1_lab2 {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your Temperature in fahrenheit");
-        float f = sc.nextFloat();
-        float c = (float) ((f - 32)*(5.0/9.0));  //IMP here you have to give 5.0,9.0 ❤️❤️‍🔥💞
+        double f = sc.nextDouble();
+        double c = (f - 32)*(5.0/9.0);  //IMP here you have to give 5.0,9.0 ❤️❤️‍🔥💞
         System.out.println(f+" Fahrenheit is "+ c +" Celsius");
     }
 }
