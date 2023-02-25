@@ -4,7 +4,7 @@ public class Q5_home_lab6 {
         int[] nums = { num1, num2, num3 };
         Arrays.sort(nums);
 
-        // check if the numbers are consecutive
+        // check if the numbers are consecutiv
         return nums[0] + 1 == nums[1] && nums[1] + 1 == nums[2];
     }
     int num1 = 5;
