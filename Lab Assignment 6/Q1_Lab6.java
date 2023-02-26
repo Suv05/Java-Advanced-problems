@@ -27,22 +27,22 @@ public class Q1_Lab6 {
 
         switch (choice) {
             case 1:
-                System.out.println(a + " + " + b + " = " + add(a, b));
+                System.out.println(a + " + " + b + " = " + additionSimple(a, b));
                 break;
             case 2:
-                System.out.println(a + " - " + b + " = " + subtract(a, b));
+                System.out.println(a + " - " + b + " = " + subtractionSimple(a, b));
                 break;
             case 3:
-                System.out.println(a + " X " + b + " = " + multiply(a, b));
+                System.out.println(a + " X " + b + " = " + multiplicationSimple(a, b));
                 break;
             case 4:
-                System.out.println(a + " % " + b + " = " + remainder(a, b));
+                System.out.println(a + " % " + b + " = " + remainderSimple(a, b));
                 break;
             case 5:
-                divide(a, b);
+                System.out.println(a + " / " + b + " = " + divisionSimple(a , b));
                 break;
             case 6:
-                sqrt(a);
+                System.out.println("sqrt(" + a + ") = " +squareRootSimple(a) );
                 break;
             default:
                 System.out.println("Invalid choice!");
@@ -50,36 +50,40 @@ public class Q1_Lab6 {
 
     }
 
-    public static int add(int x, int y) {
+    public static int additionSimple(int x, int y) {
         return x + y;
     }
 
-    public static int subtract(int x, int y) {
+    public static int subtractionSimple(int x, int y) {
         return x - y;
     }
 
-    public static int multiply(int x, int y) {
+    public static int multiplicationSimple(int x, int y) {
         return x * y;
     }
 
-    public static int remainder(int x, int y) {
+    public static int remainderSimple(int x, int y) {
         return x % y;
     }
 
-    public static void divide(int x, int y) {
+    public static double divisionSimple(int x, int y) {
+        int j = 0;
         if (x == 0) {
             System.out.println("Cannot divide by zero!");
         } else {
-            System.out.println(x + " / " + y + " = " + (x / y));
+            j = x / y;
         }
+        return j;
     }
 
-    public static void sqrt(int x) {
+    public static double squareRootSimple(int x) {
+        double k = 0;
         if (x < 0) {
             System.out.println("Cannot calculate square root of a negative number!");
         } else {
-            System.out.println("sqrt(" + x + ") = " + Math.sqrt(x));
+            k = Math.sqrt(x);
         }
+        return k;
     }
 }
 
