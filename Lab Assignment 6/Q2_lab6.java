@@ -7,7 +7,6 @@ public class Q2_lab6 {
             }
         }
     }
-
     public static int getPentagonalNumber(int n) {
         return n * (3 * n - 1) / 2;
     }
