@@ -11,11 +11,14 @@ public class Q10_lab4 {
         int num = sc.nextInt();
         int pow = 1;
         for (int i = 1; i <= 5; i++) {
-            pow = 3*pow;
+            pow = 3 * pow;
             System.out.println(pow);
-
         }
-            System.out.println("The largest power of 3 less than or equal to "+num+" is "+ pow);
 
+//        while (pow <= num / 3) {
+//            pow *= 3;
+//       }
+
+            System.out.println("The largest power of 3 less than or equal to "+num+" is "+ pow);
     }
 }
