@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Q10_lab4 {
     public static void main(String[] args) {
         //Q- Write a java program to print largest power of three less than or equal to N.
@@ -10,15 +11,11 @@ public class Q10_lab4 {
         System.out.println("Enter a number: ");
         int num = sc.nextInt();
         int pow = 1;
-        for (int i = 1; i <= 5; i++) {
-            pow = 3 * pow;
-            System.out.println(pow);
+
+        while (pow <= num / 3) {
+            pow *= 3;
         }
 
-//        while (pow <= num / 3) {
-//            pow *= 3;
-//       }
-
-            System.out.println("The largest power of 3 less than or equal to "+num+" is "+ pow);
+        System.out.println("The largest power of 3 less than or equal to " + num + " is " + pow);
     }
 }
