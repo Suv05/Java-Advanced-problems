@@ -1,13 +1,18 @@
 import java.util.Scanner;
+
 public class Q1_Lab6 {
+    //Question-1:
+    //Design a Simple Calculator using methods in java containing the following functionalities,
+    //namely, with Addition, Subtraction, Multiplication, Remainder, Division and Square Root. The
+    //signature of the methods are given below.
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
-        double num1 = input.nextDouble();
+        int a = input.nextInt();
 
         System.out.print("Enter the second number: ");
-        double num2 = input.nextDouble();
+        int b = input.nextInt();
 
         System.out.println("\nChoose an operation:");
         System.out.println("1. Addition");
@@ -22,57 +27,58 @@ public class Q1_Lab6 {
 
         switch (choice) {
             case 1:
-                add(num1, num2);
+                System.out.println(a + " + " + b + " = " + add(a, b));
                 break;
             case 2:
-                subtract(num1, num2);
+                System.out.println(a + " - " + b + " = " + subtract(a, b));
                 break;
             case 3:
-                multiply(num1, num2);
+                System.out.println(a + " X " + b + " = " + multiply(a, b));
                 break;
             case 4:
-                remainder(num1, num2);
+                System.out.println(a + " % " + b + " = " + remainder(a, b));
                 break;
             case 5:
-                divide(num1, num2);
+                divide(a, b);
                 break;
             case 6:
-                sqrt(num1);
+                sqrt(a);
                 break;
             default:
                 System.out.println("Invalid choice!");
         }
+
     }
 
-    public static void add(double num1, double num2) {
-        System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
+    public static int add(int x, int y) {
+        return x + y;
     }
 
-    public static void subtract(double num1, double num2) {
-        System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+    public static int subtract(int x, int y) {
+        return x - y;
     }
 
-    public static void multiply(double num1, double num2) {
-        System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
+    public static int multiply(int x, int y) {
+        return x * y;
     }
 
-    public static void remainder(double num1, double num2) {
-        System.out.println(num1 + " % " + num2 + " = " + (num1 % num2));
+    public static int remainder(int x, int y) {
+        return x % y;
     }
 
-    public static void divide(double num1, double num2) {
-        if (num2 == 0) {
+    public static void divide(int x, int y) {
+        if (x == 0) {
             System.out.println("Cannot divide by zero!");
         } else {
-            System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
+            System.out.println(x + " / " + y + " = " + (x / y));
         }
     }
 
-    public static void sqrt(double num1) {
-        if (num1 < 0) {
+    public static void sqrt(int x) {
+        if (x < 0) {
             System.out.println("Cannot calculate square root of a negative number!");
         } else {
-            System.out.println("sqrt(" + num1 + ") = " + Math.sqrt(num1));
+            System.out.println("sqrt(" + x + ") = " + Math.sqrt(x));
         }
     }
 }
