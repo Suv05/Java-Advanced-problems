@@ -13,7 +13,10 @@ public class Q10_lab4 {
         int pow = 1;
 
         while (pow <= num / 3) {
+           // System.out.println("post"+pow);  For check 😅
             pow *= 3;
+           // System.out.println("pre"+pow);   for check 😅
+
         }
 
         System.out.println("The largest power of 3 less than or equal to " + num + " is " + pow);
