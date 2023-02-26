@@ -6,7 +6,7 @@ public class Q7_lab4 {
         System.out.println("Enter your number: ");
         int n=sc.nextInt();
         for (int i = 1; i <= 10; i++) {
-            System.out.printf("%d * %d=%d\n ",n,i,n*i);
+            System.out.printf("%d X %d=%d\n",n,i,n*i);
         }
     }
 }
