@@ -19,13 +19,22 @@ public class Q1_lab4 {
         int y = sc.nextInt();
         System.out.println("Enter your 3rd number");
         int z = sc.nextInt();
-        int i=0;
+//        int i=0;
+//        int sum = 0;
+//        for (i= x; x <= y; x = z + x) {
+//            System.out.println(x);
+//            sum=sum+x;
+//        }
+//            System.out.println("The sum of number displayed is "+sum);
+
         int sum = 0;
-        for (i= x; x <= y; x = z + x) {
-            System.out.println(x);
-            sum=sum+x;
+
+        for (int i = x; i <= y; i =i+z) {
+            System.out.print(i + " ");
+            sum += i;
         }
-            System.out.println("The sum of number displayed is "+sum);
+
+        System.out.println("\nSum of numbers displayed: " + sum);
 
     }
 }
