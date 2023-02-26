@@ -21,7 +21,7 @@ public class Q3_lab4 {
         int count = 0;
         do {
             ran = (int) (1+(Math.random() * n));
-            System.out.println(ran);
+            System.out.println(ran+" ");
             sum = (int) (sum + ran);
             count++;
 
