@@ -20,7 +20,7 @@ public class Q6_lab4 {
 //            System.out.println("TO THE POWER "+ b);
 //        }
                 int result = 1;
-                for (int i = 0; i < p; i++) {
+                for (int i = 1; i <= p; i++) {
                     result *= b;
 
 
