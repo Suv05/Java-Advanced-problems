@@ -1,13 +1,15 @@
 import java.util.Scanner;
 public class Q6_Lab6 {
+    //Write a java program that prompts the user to enter a string followed by a character and
+    //displays the number of occurrences of the character in the string.
         public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
 
             System.out.print("Enter a string: ");
-            String inputString = scanner.nextLine();
+            String inputString = sc.nextLine();
 
             System.out.print("Enter a character: ");
-            char inputChar = scanner.nextLine().charAt(0);
+            char inputChar = sc.nextLine().charAt(0);
 
             int charCount = countOccurrences(inputString, inputChar);
 
