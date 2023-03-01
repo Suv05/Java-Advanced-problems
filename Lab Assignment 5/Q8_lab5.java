@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class Q8_lab5 {
     public static void main(String[] args) {
+        //Question-8:
+        //WAP to enter the value of n and display find the following sum of the series:
+        //1 + (1 + 2) + (1+ 2 +3) ..... + (1 + 2 + 3 + .... + n)
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the value of n: ");
