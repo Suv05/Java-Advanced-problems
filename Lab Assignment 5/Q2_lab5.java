@@ -9,10 +9,12 @@ public class Q2_lab5 {
         //97 is twisted prime.
         //Sample run 2: 43
         //43 is not a twisted prime
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number: ");
         int x = sc.nextInt();
-        //To check if it is a prim or not
+
+        //To check if it is a prime or not
         boolean isPrime = true;
         for (int i = 2; i <= x / 2; i++) {
             if (x % i == 0) {
