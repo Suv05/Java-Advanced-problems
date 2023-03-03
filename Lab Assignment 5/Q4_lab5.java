@@ -18,16 +18,13 @@ public class Q4_lab5 {
         int m = sc.nextInt();
         System.out.println("Enter the value of n: ");
         int n = sc.nextInt();
-        int fact = 1;
+
         for (int i = m; i <= n; i++) {
-            for (int j = i; j > 0; j--) {
-                System.out.println(j);
-                fact = fact * j;
-                break;
+            int fact = 1;
+            for (int j = 2; j <= i; j++) {
+                fact *= j;
             }
-
             System.out.println("Factorial of " + i + " is: " + fact);
-
         }
     }
 }
