@@ -8,25 +8,25 @@ public class Q6_lab5 {
 //* * * *
 //* * * * *
 
-//        for (int i = 1; i < 6; i++) {
-//            for (int j = i; j >0; j--) {
-//
-//            System.out.print("*");
-//            }
-//            System.out.print("\n");
-//        }
+        for (int i = 1; i < 6; i++) {
+            for (int j = i; j >0; j--) {
+
+            System.out.print(" * ");
+            }
+            System.out.print("\n");
+        }
 
 //1
 //2 2
 //3 3 3
 //4 4 4 4
 //5 5 5 5 5
-//        for (int i = 1; i < 6; i++) {
-//            for (int j = i; j > 0; j--) {
-//                System.out.print(i);
-//            }
-//            System.out.print("\n");
-//        }
+        for (int i = 1; i < 6; i++) {
+            for (int j = i; j > 0; j--) {
+                System.out.print(i);
+            }
+            System.out.print("\n");
+        }
 
 
         //1
@@ -34,14 +34,14 @@ public class Q6_lab5 {
         //4 5 6
         //7 8 9 10
         //11 12 13 14 15
-//        int count = 1;
-//        for (int i = 1; i <= 5; i++) {
-//            for (int j = 1; j <= i; j++) {
-//                System.out.print(count + " ");
-//                count++;
-//            }
-//            System.out.print("\n");
-//        }
+        int count = 1;
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(count + " ");
+                count++;
+            }
+            System.out.print("\n");
+        }
 
         //1
         //1 2
