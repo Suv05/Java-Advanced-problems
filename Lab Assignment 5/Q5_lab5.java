@@ -24,6 +24,7 @@ public class Q5_lab5 {
 //:
 //:
 //15 × 10 = 150
+
         //Normal table format...
 //        int n=2;
 //        for (int i = 1; i <= 10; i++) {
