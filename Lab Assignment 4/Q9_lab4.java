@@ -30,22 +30,5 @@ public class Q9_lab4 {
         }
         System.out.println("Input without zeros: " + output);
 
-
-             //This is by chat gpt 🤖💞😎❤️‍🔥
-//                int input = sc.nextInt();
-//                String inputString = Integer.toString(input);
-//                String outputString = "";
-//
-//                for (int i = 0; i < inputString.length(); i++) {
-//                    char currentChar = inputString.charAt(i);
-//                    if (currentChar != '0') {
-//                        outputString += currentChar;
-//                    }
-//                }
-//
-//                System.out.println("Input without zeros: " + outputString);
-
-
-
     }
 }
