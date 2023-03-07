@@ -20,8 +20,7 @@ public class Q1_lab5 {
         int x = sc.nextInt();
         System.out.println("Enter second number: ");
         int y = sc.nextInt();
-        int sum1 = 0;
-        int sum2 = 0;
+        int sum1 = 0,sum2 = 0;
         for (int i = 1; i < x; i++) {
             if (x % i == 0) {
                 sum1 = sum1 + i;
