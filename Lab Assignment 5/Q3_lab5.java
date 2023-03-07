@@ -17,6 +17,7 @@ public class Q3_lab5 {
         System.out.println("Enter the second number: ");
         int y = sc.nextInt();
         System.out.println("Prime numbers between " + x + " and " + y + " are: ");
+
         for (int i = x; i <= y; i++) {
             boolean isPrime = true;
             for (int j = 2; j < i; j++) {
