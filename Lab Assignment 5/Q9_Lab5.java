@@ -10,7 +10,7 @@ public class Q9_Lab5 {
 
         double sum = 0;
         for (int i = 1; i <= n; i++) {
-            sum += 1.0 / (i * i);
+            sum += 1.0 / Math.pow(i,2);
         }
 
         System.out.println("Sum of the series is: " + sum);
