@@ -31,7 +31,7 @@ public class Q6_lab5 {
 //5 5 5 5 5
         for (int i = 1; i < 6; i++) {
             for (int j = i; j > 0; j--) {
-                System.out.print(i);
+                System.out.print(i+" ");
             }
             System.out.print("\n");
         }
