@@ -31,9 +31,9 @@ public class Q5_lab5 {
 //            System.out.printf("%d X %d=%d\n" ,n, i, n*i);
 //        }
         for (int i = 2; i < 16; i++) {
-            System.out.println("Multiplication table of "+i);
+            System.out.println("Multiplication table of " + i);
             for (int x = 1; x < 11; x++) {
-                System.out.printf("%d X %d = %d\n",i,x,i*x);
+                System.out.printf("%d X %d = %d\n", i, x, i * x);
 
             }
         }
