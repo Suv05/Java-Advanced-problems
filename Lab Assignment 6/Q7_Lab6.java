@@ -5,6 +5,7 @@ public class Q7_Lab6 {
     //For example, count ("Welcome") returns 2.
     public static void main(String[] args) {
         String inputString = "Hello, world! by Suva m";
+        inputString = inputString.toLowerCase();
         int vowelCount = countVowels(inputString);
         System.out.println("The number of vowels in the input string is " + vowelCount);
 
