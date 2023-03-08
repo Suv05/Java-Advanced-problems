@@ -1,7 +1,7 @@
 public class Q8_Lab6 {
     //Write a java method to check a string is palindrome or not.
     public static void main(String[] args) {
-        String inputString = "A man, a plan, a canal: Panama";
+        String inputString = "Panama";
         if (isPalindrome(inputString)) {
             System.out.println(inputString + " is a palindrome!");
         } else {
@@ -10,21 +10,17 @@ public class Q8_Lab6 {
     }
 
     public static boolean isPalindrome(String inputString) {
-        // Remove all non-alphanumeric characters and convert to lowercase
-        String cleanString = inputString.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
+        int left = 0;
+        int right = inputString.length() - 1;
 
-        int i = 0;
-        int j = cleanString.length() - 1;
-
-        while (i < j) {
-            if (cleanString.charAt(i) != cleanString.charAt(j)) {
+        while (left < right) {
+            if (inputString.charAt(left) != inputString.charAt(right)) {
                 return false;
             }
-            i++;
-            j--;
+            left++;
+            right--;
         }
 
         return true;
     }
-
 }
