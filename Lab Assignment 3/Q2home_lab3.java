@@ -37,8 +37,6 @@ public class Q2home_lab3 {
             case 4 -> System.out.print(" And the future day  is Thursday");
             case 5 -> System.out.print(" And the future day  is Friday");
             case 6 -> System.out.print(" And the future day  is Saturday");
-            case 7 -> System.out.print(" And the future day  is sunday");
-
         }
 
     }
