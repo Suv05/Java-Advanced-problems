@@ -22,30 +22,13 @@ public class Q3_lab4 {
         do {
             ran = (int) (1+(Math.random() * n));
             System.out.println(ran+" ");
-            sum = (int) (sum + ran);
+            sum = sum + ran;
             count++;
 
         } while (count < n);
         int avg_sum =  (sum / n);
         System.out.println("here is avg " + avg_sum);
 
-
-        /*
-        BY😻ChatGpt....🌙💞
-        Scanner sc = new Scanner(System.in);
-                System.out.print("Enter a number N: ");
-                int n = sc.nextInt();
-                int sum = 0;
-                        int count = 0;
-                        do {
-                            int randomNum = (int) (Math.random() * n );
-                            System.out.println(randomNum);
-                            sum += randomNum;
-                            count++;
-                        } while (count < n);
-                        double average = (double) sum / n;
-                        System.out.println("Average: " + average);
-        */
     }
 }
 
