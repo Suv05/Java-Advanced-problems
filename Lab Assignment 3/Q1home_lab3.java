@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class Q1home_lab3 {
     public static void main(String[] args) {
         //Q-Write a java program that plays the popular scissor-rock-paper game. (Scissors can cut
