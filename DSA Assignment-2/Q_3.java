@@ -66,10 +66,6 @@ public class Q_3 {
         for (Student student : stu) {
             student.display();
         }
-
-
-
-
     }
 
 }
