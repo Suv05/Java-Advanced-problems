@@ -6,39 +6,40 @@ products. Using the above-mentioned class, display the details of products that 
 purchased. Also, determine how much total amount the person will pay for the purchase of 5
 products.*/
 
-import java.util.*;
+class Product {
+    static double tot_price = 0; // Total price of all products purchased
+    int pid; // Product ID
+    double price; // Product price
 
-class product {
-    static int tot_price;
-    int pid;
-    int price;
-
-    public product(int pid, int price) {
+    public Product(int pid, double price) {
         this.pid = pid;
         this.price = price;
+        tot_price += price;
     }
 
     public void display() {
-        System.out.println(pid + " \t " +" \t " +price);
+        System.out.println("Product ID: " + pid + ", Product Price: " + price);
     }
 }
 
 public class Q_4 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        product[] po = new product[5];
+        // Creating objects of Product class
+        Product p1 = new Product(1, 10.5);
+        Product p2 = new Product(2, 20.75);
+        Product p3 = new Product(3, 5.99);
+        Product p4 = new Product(4, 15.0);
+        Product p5 = new Product(5, 8.49);
 
-        po[0] = new product(110, 45);
-        po[1] = new product(111, 98);
-        po[2] = new product(112, 75);
-        po[3] = new product(113, 65);
-        po[4] = new product(114, 100);
-        System.out.println("Product-Id\t "+"price ");
-        for (product element : po) {
-            element.display();
-        }
+        // Displaying the details of purchased products
+        System.out.println("Details of purchased products:");
+        p1.display();
+        p2.display();
+        p3.display();
+        p4.display();
+        p5.display();
 
-        System.out.println("Total price pay by the person to purchase these--> ");
-
+        // Displaying the total price of purchased products
+        System.out.println("Total price of purchased products: " + Product.tot_price);
     }
 }
