@@ -1,7 +1,12 @@
-/*Principal Long
-  Time Integer
-  rate Double
-  Total_amt Double*/
+/*Initialize the instance variables Principal, Time, rate through constructors. Constructors are
+overloaded with the following prototypes.
+Constructor1: Deposit ( )
+Constructor2: Deposit (long, int, double)
+Constructor3: Deposit (long, int)
+Constructor4: Deposit (long, double)
+Apart from constructor, the other instance methods are (i) display ( ): to display the
+value of instance variables, (ii) calc_amt( ) to calculate the total amount.
+Total_amt = Principal + (Principal×rate×Time)/100;*/
 class Deposit {
     long principal;
     int time;
@@ -36,13 +41,16 @@ class Deposit {
         System.out.println("Principal:- "+principal+" Time:- "+time+" Rate:- "+rate);
     }
 
-    public void calc_amt() {
-        System.out.println(principal + (principal*rate*time)/100);
+    public double calc_amt() {
+        return principal + (principal*rate*time)/100;
     }
 }
 
 public class Q_5 {
     public static void main(String[] args) {
+        Deposit d = new Deposit(1452245,12,6.5);
+        d.display();
+        System.out.println("Here is the total amount "+ d.calc_amt());
 
     }
 }
