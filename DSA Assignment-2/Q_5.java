@@ -18,8 +18,7 @@ class Deposit {
     a default constructor in Java.*/
 
     //no argument constructor not default
-    public Deposit() {
-    }
+    public Deposit() {}
 
     public Deposit(long principal, int time, double rate) {
         this.principal = principal;
