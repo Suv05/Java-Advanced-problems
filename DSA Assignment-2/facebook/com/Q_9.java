@@ -5,7 +5,6 @@ class contains mark1, mark2, mark3 as instance variables representing the marks 
 subjects and input_Marks () and display_Result () as instance methods. Create an array of
 objects of the Exam class and display the result of 5 students.*/
 package facebook.com;
-
 import java.util.*;
 
 class Student {
