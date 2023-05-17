@@ -31,7 +31,6 @@ ARC */
 //    }
 //}
 
-
 public class Q_4 {
 
     static char[] characters = {'c', 'a', 'r', 'b', 'o', 'n'};
