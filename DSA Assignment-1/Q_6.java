@@ -34,13 +34,3 @@ public class Q_6 {
         }
         return false;
     }*/
-//1-When an integer is right-shifted by 1 (i.e., i >> 1), it effectively divides the number by 2.
-
-//2-Then, the result is left-shifted by 1 (i.e., (i >> 1) << 1).This operation
-// effectively multiplies the number by 2.
-
-//3-If the original number i is odd, then the left-shifted result
-// will be different from the original number i.
-
-//4-In such a case, the condition (i >> 1) << 1 != i evaluates to true,
-// indicating that the number is odd.
