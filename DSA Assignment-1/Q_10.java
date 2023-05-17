@@ -11,14 +11,14 @@ public class Q_10 {
         }
 
         public static double[][] readMatrix(int rows, int columns) {
-            Scanner scanner = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
             double[][] matrix = new double[rows][columns];
 
             System.out.println("Enter the elements of the matrix:");
 
             for (int i = 0; i < rows; i++) {
                 for (int j = 0; j < columns; j++) {
-                    matrix[i][j] = scanner.nextDouble();
+                    matrix[i][j] = sc.nextDouble();
                 }
             }
 
