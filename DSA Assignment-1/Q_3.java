@@ -7,7 +7,6 @@ Product of digit of N = 1 × 3 × 2 = 6
 So, 132 is a spy number.*/
 
 import java.util.*;
-
 public class Q_3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
