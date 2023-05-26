@@ -8,28 +8,6 @@ RCA
 RAC
 ACR
 ARC */
-//import java.util.*;
-//public class Q_4 {
-//    public static void main(String[] args) {
-//        String str = "carbon";
-//        List<String> result = new ArrayList<>();
-//        permutation("", str, result);
-//        for (String s : result) {
-//            System.out.println(s);
-//        }
-//    }
-//
-//    private static void permutation(String prefix, String str, List<String> result) {
-//        int n = str.length();
-//        if (n == 0) {
-//            result.add(prefix);
-//        } else {
-//            for (int i = 0; i < n; i++) {
-//                permutation(prefix + str.charAt(i), str.substring(0, i) + str.substring(i + 1), result);
-//            }
-//        }
-//    }
-//}
 
 public class Q_4 {
 
