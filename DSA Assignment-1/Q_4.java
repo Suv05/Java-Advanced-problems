@@ -35,10 +35,6 @@ public class Q_4 {
 
     static char[] characters = {'c', 'a', 'r', 'b', 'o', 'n'};
 
-    public static void main(String[] args) {
-        printPermutation(characters, 0, characters.length);
-    }
-
     private static void printPermutation(char[] a, int startIndex, int endIndex) {
         if (startIndex == endIndex)//reached end of recursion, print the state of a
             System.out.println(new String(a));
@@ -59,4 +55,7 @@ public class Q_4 {
         a[x] = t;
     }
 
+    public static void main(String[] args) {
+        printPermutation(characters, 0, characters.length);
+    }
 }
