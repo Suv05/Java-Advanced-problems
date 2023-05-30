@@ -18,7 +18,8 @@ public class Q_5 {
         System.out.println("Enter your number");
         int n = sc.nextInt();
         int result = sum_Of_Digits(n);
-        System.out.println("Sum of digits of " + n + " until the number is a single digit is " + result); // Output: 6
+        System.out.println("Sum of digits of " + n + " until the number is a single digit is " + result);
+        // Output: 6
 
     }
 
