@@ -1,23 +1,35 @@
 /*Write a java program to find the maximum and minimum and how many times they both occur
 in an array of n elements. Find out the positions where the maximum first occurs and the
 minimum last occurs.*/
-import java.util.Arrays;
+
+import java.util.*;
+
 public class Q_7 {
     public static void main(String[] args) {
-        int[] arr = {4, 2, 1, 5, 3, 2, 1, 5, 4, 5};
+        Scanner scanner = new Scanner(System.in);
 
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
+        System.out.print("Enter the number of elements in the array: ");
+        int n = scanner.nextInt();
+
+        int[] arr = new int[n];
+
+        System.out.print("Enter the elements of the array: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        int max = arr[0];
+        int min = arr[0];
         int maxOccurrences = 0;
         int minOccurrences = 0;
         int maxFirstPos = -1;
         int minLastPos = -1;
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < n; i++) {
             if (arr[i] > max) {
                 max = arr[i];
                 maxOccurrences = 1;
-                maxFirstPos = i;
+                maxFirstPos = i + 1;
             } else if (arr[i] == max) {
                 maxOccurrences++;
             }
@@ -25,19 +37,17 @@ public class Q_7 {
             if (arr[i] < min) {
                 min = arr[i];
                 minOccurrences = 1;
-                minLastPos = i;
+                minLastPos = i + 1;
             } else if (arr[i] == min) {
                 minOccurrences++;
-                minLastPos = i;
+                minLastPos = i + 1;
             }
         }
 
-        System.out.println("Array: " + Arrays.toString(arr));
-        System.out.println("Maximum value: " + max);
-        System.out.println("Minimum value: " + min);
-        System.out.println("Maximum occurrences: " + maxOccurrences);
-        System.out.println("Minimum occurrences: " + minOccurrences);
-        System.out.println("Position of the first occurrence of maximum: " + maxFirstPos);
-        System.out.println("Position of the last occurrence of minimum: " + minLastPos);
+
+        System.out.println("Maximum element of the array is " + max + " and occurs " + maxOccurrences + " times.");
+        System.out.println("Minimum element of the array is " + min + " and occurs " + minOccurrences + " times.");
+        System.out.println("First occurrence of the maximum element is at position " + maxFirstPos + ".");
+        System.out.println("Last occurrence of the minimum element is at position " + minLastPos + ".");
     }
 }
