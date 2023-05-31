@@ -23,7 +23,7 @@ public class Q_6 {
 
     public static void main(String[] args) {
 
-        int num1 = 10;
+        int num1 = 11;
         System.out.println(num1 + " is odd? " + isOdd(num1));
     }
 }
