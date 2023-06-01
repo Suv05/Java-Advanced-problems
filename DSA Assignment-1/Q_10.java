@@ -38,8 +38,8 @@ public class Q_10 {
     public static double sumColumn(double[][] matrix, int columnIndex) {
         double sum = 0;
 
-        for (int i = 0; i < matrix.length; i++) {
-            sum += matrix[i][columnIndex];
+        for (double[] elements : matrix) {
+            sum += elements[columnIndex];
         }
 
         return sum;
