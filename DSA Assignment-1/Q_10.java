@@ -7,23 +7,17 @@ import java.util.Scanner;
 
 public class Q_10 {
     public static void main(String[] args) {
-        double[][] matrix = readMatrix(3, 4);
-        displayColumnSums(matrix);
-    }
-
-    public static double[][] readMatrix(int rows, int columns) {
         Scanner sc = new Scanner(System.in);
-        double[][] matrix = new double[rows][columns];
+        double[][] matrix = new double[3][4];
 
         System.out.println("Enter the elements of the matrix:");
 
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < columns; j++) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
                 matrix[i][j] = sc.nextDouble();
             }
         }
-
-        return matrix;
+        displayColumnSums(matrix);
     }
 
     public static void displayColumnSums(double[][] matrix) {
