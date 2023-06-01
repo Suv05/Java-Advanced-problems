@@ -48,7 +48,5 @@ public class Q_8 {
         }
 
         System.out.println("\nSum of array elements: " + sum);
-
-        sc.close();
     }
 }
