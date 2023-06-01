@@ -21,12 +21,12 @@ public class Q_8 {
         int N = sc.nextInt();
 
         // Create the array and populate it with user input
-        int[][] array = new int[M][N];
+        int[][] arr = new int[M][N];
         System.out.println("Enter the elements of the array:");
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
                 System.out.print("Enter element at position (" + i + ", " + j + "): ");
-                array[i][j] = sc.nextInt();
+                arr[i][j] = sc.nextInt();
             }
         }
 
@@ -34,7 +34,7 @@ public class Q_8 {
         System.out.println("\nArray in tabular format:");
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
-                System.out.print(array[i][j] + "\t");
+                System.out.print(arr[i][j] + "\t");
             }
             System.out.println();
         }
@@ -43,7 +43,7 @@ public class Q_8 {
         int sum = 0;
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
-                sum += array[i][j];
+                sum += arr[i][j];
             }
         }
 
