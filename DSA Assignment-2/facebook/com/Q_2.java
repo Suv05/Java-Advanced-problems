@@ -1,4 +1,5 @@
 package facebook.com;
+
 /*Define a class called Complex with instance variables real, imag and instance methods
 setData(), display(), add(). Write a Java program to add two complex numbers.
 The prototype of add method is:- public Complex add(Complex, Complex).*/
@@ -18,10 +19,6 @@ class Complex {
             System.out.println(real + " + " + imag + "i");
         }
     }
-
-//    public void display() {
-//        System.out.println(real + "i" + imag);
-//    }
 
     public Complex add(Complex c1, Complex c2) {
         Complex sum = new Complex();
