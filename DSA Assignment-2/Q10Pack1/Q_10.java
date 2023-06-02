@@ -12,7 +12,7 @@ class Student {
     protected String name;
     protected int roll;
 
-    public void inputa() {
+    public void input() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter name:");
         name = sc.next();
@@ -31,7 +31,7 @@ class Test extends Student {
     protected int mark2;
 
     public void input() {
-        super.inputa();
+        super.input();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter marks in subject 1:");
         mark1 = sc.nextInt();
