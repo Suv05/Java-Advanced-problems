@@ -41,7 +41,8 @@ class Deposit {
     }
 
     public double calc_amt() {
-        return principal + (principal*rate*time)/100;
+        total_amount= principal + (principal*rate*time)/100;
+        return total_amount;
     }
 }
 
