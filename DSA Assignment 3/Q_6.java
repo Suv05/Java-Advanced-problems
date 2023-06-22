@@ -1,6 +1,6 @@
-public class MainClass {
+public class Q_6 {
     public static void main(String[] args) {
-        // Experiment 1: Boxed String
+//         Experiment 1: Boxed String
 //        Box<String> stringBox = new Box<>("Hello");
 //        Box<String> stringBox2 = stringBox;
 //

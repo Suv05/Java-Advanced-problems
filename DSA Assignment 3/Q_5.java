@@ -26,8 +26,6 @@ public class Q_5 {
 
         int occurrence = count(intArray, searchItem);
         System.out.println("Number of times " + searchItem + " is present in the array is " + occurrence);
-
-        scanner.close();
     }
 }
 
